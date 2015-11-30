@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="This website displays list of events happening in USA containing Art festival, California, Sports, Beer, Science, new york, mardigras">
+    <meta name="author" content="Team11">
+    <meta name="keyword" content="Art festival, California, Sports, Beer, Science, new york, mardigras ">
+    <title>Displaying List of Events</title>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/font-awesome.min.css" rel="stylesheet" >
+	<link href="/css/main.css" rel="stylesheet" >
+	<link href="/css/animate.css" rel="stylesheet">	
+	<link href="/css/responsive.css" rel="stylesheet">
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+<link rel="icon" href="/favicon.ico" type="image/x-icon">
+ 
+  <script type="text/javascript" src="/js/googleTracker.js"></script>
+   <style>
+  #content{
+  font-family: Agenda-Light, Agenda Light, Agenda, Arial Narrow, sans-serif;
+  font-weight:100; 
+  background: rgba(0,0,0,0.8);
+  padding: 2rem;
+  width: 100%;
+  font-size: 1.2rem;
+  height: :100px;
+}
+<!--@media all and (max-width: 500px) and (min-width: 800px) and (max-width: 1024px) { 
+  
+}-->
+   </style>
+<meta name="google-translate-customization" content="1e55f5583e42a8eb-6d2d84e14efd29e7-g8a9754091c8be0e2-20"></meta>
+</head>
+<body>
+	 <div id="content">
+        <div class="row">
+         <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="http://evento-eventocmpe280.rhcloud.com/">
+                            <img class="img-responsive" src="/images/logo.png" alt="logo">
+                        </a>                    
+                    </div>
+                    <div class="header-top">
+                    <div class="pull-right social-icons">
+            <a href="https://www.twitter.com"><i class="fa fa-twitter"></i></a>
+            <a href="https://www.facebook.com"><i class="fa fa-facebook"></i></a>
+            <a href="https://plus.google.com"><i class="fa fa-google-plus"></i></a>
+            <a href="https://www.youtube.com"><i class="fa fa-youtube"></i></a>
+                    </div>
+                </div> 
+              </div>
+<div class="row">
+<div  class="col-lg-12" style="font-family:'Avro';font-size: 15px;margin-top:100px;">
+<% for(var i=0;i<eventlist.length;i++){%>
+<img src="http://res.edinburg.schooldesk.net/Portals/Edinburg/Ramirez/images/Home%20Page/gif-gold-glitter-stars_21.gif" width="15" height="15" style= "vertical-align:middle;" alt="eventdesc">   <a href="/Events/<%= eventlist[i].Name %>" style="font-family:'Avro';font-size: 20px;align:justify;color:'white';vertical-align:middle;"><%=eventlist[i].Name %></a> <b>,</b> <%=eventlist[i].City %><br><br>
+<p style="font-family:'Avro';font-size: 20px;align:justify;color:'white;"><%= eventlist[i].description %></p>
+<%}%>
+</div>
+</div>
+</div>
+<footer id="footer">
+        <div class="container">
+            <div class="text-center">
+                <p> Copyright  &copy;2015  Evento . All Rights Reserved. <br> Designed by Cmpe280 team</p>               
+            </div>
+            <div id="google_translate_element"></div><script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+}
+</script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.3";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
+<a class="twitter-share-button"
+  href="https://twitter.com/share">
+Tweet
+</a>
+<script>
+window.twttr=(function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],t=window.twttr||{};if(d.getElementById(id))return t;js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);t._e=[];t.ready=function(f){t._e.push(f);};return t;}(document,"script","twitter-wjs"));
+</script>
+<!-- Place this tag in your head or just before your close body tag. -->
+<script src="https://apis.google.com/js/platform.js" async defer></script>
+
+<!-- Place this tag where you want the +1 button to render. -->
+<div class="g-plusone" data-annotation="inline" data-width="300"></div>
+<a href="//www.pinterest.com/pin/create/button/" data-pin-do="buttonBookmark"  data-pin-color="red" data-pin-height="28"><img src="//assets.pinterest.com/images/pidgets/pinit_fg_en_rect_red_28.png" /></a>
+<!-- Please call pinit.js only once per page -->
+<script type="text/javascript" async defer src="//assets.pinterest.com/js/pinit.js"></script>
+        </div>
+    </footer>
+    <!--/#footer-->
+  
+    <script type="text/javascript" src="/js/jquery.js"></script>
+    <script type="text/javascript" src="/js/bootstrap.min.js"></script>
+	  <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
+  	<script type="text/javascript" src="/js/gmaps.js"></script>
+	  <script type="text/javascript" src="/js/smoothscroll.js"></script>
+    <script type="text/javascript" src="/js/jquery.parallax.js"></script>
+    <script type="text/javascript" src="/js/coundown-timer.js"></script>
+    <script type="text/javascript" src="/js/jquery.scrollTo.js"></script>
+    <script type="text/javascript" src="/js/jquery.nav.js"></script>
+    <script type="text/javascript" src="/js/main.js"></script>  
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+</body>
+</html>
